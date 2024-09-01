@@ -1,86 +1,24 @@
-const styling = {
-  container: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "25px 80px",
-    width: "85vw",
-  },
-  mobileContainer: {
-    '@media screen and (maxWidth: 700px)': {
-      flexDirection: "column"
-    }
-  },
-  navigation: {
-    display: "flex",
-    flexDirection: "row",
-    backgroundColor: "red",
-  },
-  navigationList: {
-    listStyleType: "none",
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-evenly",
-    color: "black",
-    // width: "90vw"
-  },
-  listItems: {
-    padding: "10px",
-    textDecoration: "none",
-    color: "#9C9AA3",
-    fontWeight: "700",
-    fontSize: "15px"
-  },
-  signUp: {
-    textDecoration: "none",
-    backgroundColor: "#29D0D2",
-    color: "white",
-    borderRadius: "20px",
-    padding: "10px 20px",
-    width: "80px",
-    textAlign: "center",
-    borderWidth: "0",
-  },
-  listItem1: {
-    display: "flex",
-    gap: "30px",
-  },
-  listItem2: {
-    marginLeft: "35vw",
-    display: "flex",
-    alignItems: "center",
-    gap: "25px",
-  },
-}
-
-
-
-const mergedStyles = { ...styling.listItems, ...styling.signUp };
-const mergerStyles2 = {...styling.mobileContainer, ...styling.container}
-
 function Nav() {
   return (
-    <div className="container" style={mergerStyles2}>
+    <div className="flex justify-between items-center py-8 px-20">
       <img src="/images/logo.svg" alt="logo"/>
-      <ul style={styling.navigationList}>
-        <li style={styling.listItem1}>
-          <a href="#" style={styling.listItems}>
+      <ul className="flex justify-between items-center w-11/12">
+        <li className="flex gap-6 pl-10">
+          <a href="#">
             Features
           </a>
-          <a href="#" style={styling.listItems}>
+          <a href="#">
             Pricing
           </a>
-          <a href="#" style={styling.listItems}>
+          <a href="#">
             Resources
           </a>
         </li>
-        <li style={styling.listItem2}>
-          <a href="#" style={styling.listItems}>
+        <li className="flex relative -left-20 gap-8">
+          <a href="#" className="flex self-center">
             Login
           </a>
-          <a href="#" style={mergedStyles}>
+          <a href="#" className="text-white bg-customGreen py-2 px-8 w-22 rounded-3xl">
             Sign Up
           </a>
         </li>
