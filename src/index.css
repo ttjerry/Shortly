@@ -6,24 +6,46 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-    font-family: poppins;
-    src: url('/public/fonts/poppins/Poppins-Light.ttf');
-}
-
-@font-face {
-    font-family: poppinsBold;
-    src: url('/public/fonts/poppins/Poppins-ExtraBold.ttf');
+  font-family: poppins;
+  src: url("/public/fonts/poppins/Poppins-Light.ttf");
 }
 
 @font-face {
-    font-family: poppinsRegular;
-    src: url('/public/fonts/poppins/Poppins-SemiBold.ttf');
+  font-family: poppinsBold;
+  src: url("/public/fonts/poppins/Poppins-ExtraBold.ttf");
 }
 
-*{
-    font-family: poppins;
-    overflow-x: hidden;
+@font-face {
+  font-family: poppinsRegular;
+  src: url("/public/fonts/poppins/Poppins-SemiBold.ttf");
 }
 
+* {
+  font-family: poppins;
+  overflow-x: hidden;
+}
+
+.imageBackground {
+  background-image: url('/public/images/bg-shorten-desktop.svg');
+  background-position: "center";
+  background-size: "cover";
+  background-repeat: "no-repeat";
+}
+
+
+
+.cardImage{
+    position: relative;
+    top:32px;
+    left: 20px;
+    z-index: 999;
+}
+
+.card{
+    margin-right: 20px;
+}
+
+.moveCard{
+    transform: translateY(20%);
+}
