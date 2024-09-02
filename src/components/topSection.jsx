@@ -7,7 +7,7 @@ const styles={
 
 function TopSection() {
   return (
-    <div className='flex flex-row justify-between px-20 py-12 w-12/12'>
+    <div className='flex flex-row relative z-10 justify-between px-20 py-12 w-12/12'>
       <div className='flex justify-center flex-col gap-6 '>
         <h1 className='text-6xl font-black w-11/12 leading-20 overflow-hidden' style={styles}>More than just shorter links</h1>
         <h4 className='w-3/4 text-customGrey font-bold leading-6'>

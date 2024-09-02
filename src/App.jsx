@@ -1,6 +1,7 @@
 import Nav from './components/navigation'
 import TopSection from './components/topSection'
 import Middle from './components/middleSection'
+import Search from './components/search'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <Nav/>
     <TopSection/>
     </div>
+    <Search/>
     <Middle/>
 
     </>

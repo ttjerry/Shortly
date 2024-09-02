@@ -42,8 +42,15 @@
     z-index: 999;
 }
 
+.line{
+    background-color: #2ACED0;
+    width: 25px;
+    height: 3px;
+    content: "";
+}
+
 .card{
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .moveCard{
