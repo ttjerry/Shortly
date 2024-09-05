@@ -1,8 +1,7 @@
 
 function Card(props) {
-    const isShowing = props.line;
   return (
-    <div className="card flex flex-col justify-center gap-2" style={props.styling}>
+    <div className={`card flex flex-col ${props.styling} justify-center gap-2`}>
       <div className="cardImage flex justify-center bg-urlSection rounded-full w-16 p-4">
         <img src={props.image} alt="stats-image" className=" w-10" />
       </div>

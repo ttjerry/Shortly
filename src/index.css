@@ -37,20 +37,29 @@
 
 .cardImage{
     position: relative;
-    top:32px;
+    top:40px;
     left: 20px;
     z-index: 999;
 }
 
 .line{
     background-color: #2ACED0;
-    width: 25px;
-    height: 3px;
+    transform: translateY(2rem);
+    width: 30px;
+    height: 4px;
     content: "";
 }
 
-.card{
-    /* margin-right: 20px; */
+.footer{
+    background-image: url(/public/images/bg-shorten-desktop.svg);
+}
+
+.footerText{
+    font-family: poppinsBold;
+}
+
+.logoFooter{
+    filter: invert(2);
 }
 
 .moveCard{

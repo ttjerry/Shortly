@@ -16,15 +16,16 @@ const info = {
   thirdCard: {
     name: "Fully Customizable",
     image: "/images/icon-fully-customizable.svg",
-    details:"Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
+    details:
+      "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
   },
 };
 
 function Middle() {
   return (
-    <div className="bg-backSection2 relative  flex flex-col justify-evenly h-screen items-center">
+    <div className="bg-backSection2 relative py-24  flex flex-col justify-evenly md:h-screen items-center">
       {/* search section */}
-      
+
       {/*  */}
       <div className="flex flex-col">
         <div className="flex flex-col justify-center items-center">
@@ -41,27 +42,27 @@ function Middle() {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center items-center align-start relative -top-[20px] pb-20 overflow-y-hidden h-80">
+      <div className="flex md:flex-row flex-col justify-center items-center relative -top-[20px] md:pb-20 overflow-y-hidden md:h-80">
         <Card
           name={info.firstCard.name}
           image={info.firstCard.image}
           details={info.firstCard.details}
         />
         {/*  */}
-        <span className="line" style={{ transform: "translateY(2rem)" }}></span>
+          <span className="line md:rotate-0 rotate-180"></span>
         <Card
           name={info.secondCard.name}
           image={info.secondCard.image}
           details={info.secondCard.details}
-          styling={{ transform: "translateY(10%)" }}
+          styling={"md:translate-y-[10%]"}
         />
         {/*  */}
-        <span className="line" style={{ transform: "translateY(2rem)" }}></span>
+        <span className="line rotate-180"></span>
         <Card
           name={info.thirdCard.name}
           image={info.thirdCard.image}
           details={info.thirdCard.details}
-          styling={{ transform: "translateY(20%)" }}
+          styling={"md:translate-y-[20%]"}
         />
       </div>
     </div>

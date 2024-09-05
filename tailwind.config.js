@@ -12,7 +12,8 @@ export default {
         backWhite: '#FFFEFE',
         backSection2: '#F0F1F6',
         urlSection: '#3A3053',
-        lineGreen: '#2ACED0'
+        lineGreen: '#2ACED0', 
+        footerBlack: '#232126',
       },
     },
   },
